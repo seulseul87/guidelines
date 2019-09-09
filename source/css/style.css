@@ -1,0 +1,169 @@
+
+
+@font-face {
+  font-family: 'Noto Sans KR';
+  font-display: swap;
+  font-style: normal;
+  font-weight: 300;
+  src: local('Noto Sans KR Light'), 
+       local('NotoSansKR-Light'), 
+       url(../fonts/NotoSans-Light.woff) format('woff'),
+       url(../fonts/NotoSans-Light.woff2) format('woff2'), 
+       url(../fonts/NotoSans-Light.otf) format('otf'), 
+       url(../fonts/NotoSans-Light.eot) format('eot');
+}
+@font-face {
+  font-family: 'Noto Sans KR';
+  font-display: swap;
+  font-style: normal;
+  font-weight: 400;
+  src: local('Noto Sans KR Regular'), 
+       local('NotoSansKR-Regular'), 
+       url(../fonts/NotoSans-Regular.woff) format('woff'),
+       url(../fonts/NotoSans-Regular.woff2) format('woff2'), 
+       url(../fonts/NotoSans-Regular.otf) format('otf'), 
+       url(../fonts/NotoSans-Regular.eot) format('eot');
+}
+@font-face {
+  font-family: 'Noto Sans KR';
+  font-display: swap;
+  font-style: normal;
+  font-weight: 500;
+  src: local('Noto Sans KR Medium'), 
+       local('NotoSansKR-Medium'), 
+       url(../fonts/NotoSans-Medium.woff) format('woff'),
+       url(../fonts/NotoSans-Medium.woff2) format('woff2'), 
+       url(../fonts/NotoSans-Medium.otf) format('otf'), 
+       url(../fonts/NotoSans-Medium.eot) format('eot');
+}
+@font-face {
+  font-family: 'Noto Sans KR';
+  font-display: swap;
+  font-style: normal;
+  font-weight: 600;
+  src: local('Noto Sans KR Bold'), 
+       local('NotoSansKR-Bold'), 
+       url(../fonts/NotoSans-Bold.woff) format('woff'),
+       url(../fonts/NotoSans-Bold.woff2) format('woff2'), 
+       url(../fonts/NotoSans-Bold.otf) format('otf'), 
+       url(../fonts/NotoSans-Bold.eot) format('eot');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {   
+  font-family: "Noto Sans KR", sans-serif !important;
+  font-size: 16px;  
+}
+
+
+/* header */
+
+#header {  
+  position: fixed;  
+  width: 100%;
+  height: 70px;
+  background-color:#fff;    
+  z-index: 9999;
+}
+#header .gnb {    
+  list-style: none;    
+}
+#header .git {
+  position: absolute;
+  top: 20px;
+  right: 20px;  
+}
+#header .logo {
+  display: block;
+  position: absolute;
+  top: 25px;
+  left: 20px;  
+  font-size: 1.2rem;
+  font-weight: 600;
+  letter-spacing: -0.05rem;  
+}
+#header .menu {
+  position: absolute;  
+  top: 25px;
+  left: 300px;  
+}
+#header .menu li { 
+  float: left;
+  margin-left: 50px; 
+}
+#header .menu a {
+  color: #333;
+  font-size: 0.9rem;
+  font-weight: 300;
+  text-decoration: none;
+  outline: none;
+}
+
+
+
+/* section */
+
+#section {
+  position: absolute; 
+  display: block;
+  overflow: hidden;
+  overflow-y: auto;   
+  width: 90%;
+  height: 100%;  
+  margin: 100px;  
+  padding: 10px;  
+  text-align: left;   
+  font-weight: 300;
+  line-height: 1.3;     
+  letter-spacing: 0.05rem;
+  color: #abd8ed;
+  font-size: 3.5rem;  
+}  
+#section a {
+  cursor: pointer;
+  position: relative;
+  word-wrap: break-word;
+  color: #35aee6;
+  text-decoration: none;
+}
+#section a > div { 
+  visibility: visible;
+  cursor: pointer;
+  pointer-events: auto;
+}
+
+
+
+
+
+/* container */
+
+#container {
+  height: 100%;    
+}
+
+
+
+/* footer */
+
+footer {  
+  position: absolute;
+  width: 100%; 
+  height: 70px;
+  background-color:#fff;    
+  border-top: #c1c1c1 1px solid;  
+  bottom: 0;
+  height: 50px; 
+  color: #333;
+  font-size: 0.8rem;
+  font-weight: 300;   
+}
+footer .copyright {  
+  position: absolute;  
+  left: 20px;
+  margin-top: 20px;
+  color: #c1c1c1;  
+}
