@@ -101,7 +101,7 @@ gulp.task('connect', function () {
 gulp.task('watch', function (callback) {
   livereload.listen();
   gulp.watch(path.source.js + '/*.js', ['copy:js'], callback);
-  gulp.watch(path.source.style + '/*.{scss,sass,css}', ['convert:sass:sourcemap'], callback);
+  gulp.watch(path.source.style + '/*.{scss,sass,css}', ['convert:css'], callback);
 
   // 탬플릿은 세밀하게 지정해줘야 될지도...
   gulp.watch([
