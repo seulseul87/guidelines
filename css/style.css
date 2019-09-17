@@ -68,8 +68,8 @@ header {
   left:0;
   width: 100%;
   height: 70px;
-
   background-color:#fff;   
+  z-index: 999;
 }
 header .git {
   position: absolute;
@@ -81,26 +81,26 @@ header .logo {
   position: absolute;
   top: 25px;
   left: 20px;  
-  font-size: 1.1rem;
+  font-size: 20px;
   font-weight: 600;
-  letter-spacing: -0.05rem;  
+  letter-spacing: -1px;    
 }
 header .logo a {
   text-decoration: none;
-  color: #000;
+  color: #000;   
 }
 header .menu {
   position: absolute;  
-  top: 25px;
-  left: 300px;  
+  top: 24px;
+  left: 300px; 
 }
 header .menu li { 
   float: left;
-  margin-left: 50px; 
+  margin-right: 70px; 
 }
 header .menu a {
   color: #9ea5aa;
-  font-size: 0.9rem;
+  font-size: 16px;;
   font-weight: 300;
   text-decoration: none;
   outline: none;
@@ -113,43 +113,57 @@ header .menu a:hover {
 /* container */
 
 #container {
-  height: 100%;  
-  padding-top:70px;  
-
+  position:relative;
+  min-height: 100vh;
+  padding: 70px 4% 51px;
+  -webkit-box-sizing:border-box;
+          box-sizing:border-box;
 }
 
+
 /* contents */
+
 #contents {
-  position: absolute;
-  padding-left: 4%;
-  padding-right: 4%;
-  width: 100%;
-  height: 100%;
-  top: 120px;
-  background-color: #35aee6;
+  /* width: 100%; */
 }
 #contents > h1 {
   font-size: 1.8rem;
-  font-weight: 300; 
-  color: #4d5256; 
+  font-weight: 300;
+  margin-top: 100px;
+  margin-bottom: 50px; 
 }
 #contents > h2 {
-  font-size: 1.2rem;
+  font-size: 1.0rem;
   font-weight: 500; 
   color: #000; 
   margin-top: 50px;
   line-height: 1.8rem;
 }
+#contents.main {
+  position: absolute;
+  top:0;
+  bottom:0;
+  left:5%;
+  right:5%;
+  height:100%;
+  display:-webkit-box;
+  display:-ms-flexbox;
+  display:flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
 #contents .section {
   display: block;
-  width: 95%;   
   text-align: left;   
   font-weight: 300;
   line-height: 1.2;     
   letter-spacing: 0.05rem;
   color: #abd8ed;
   font-size: 3.5rem;  
-  background-color: aquamarine;
 }  
 #contents .section a {
   color: #35aee6;
@@ -157,8 +171,18 @@ header .menu a:hover {
 }
 
 
+/* sub01 - Grid System */
 
-/* footer */
+
+#contents .layout {
+  line-height: 1.5rem;
+  color: #4d5256;
+}
+
+
+
+
+  /* footer */
 
 footer {  
   position: absolute;
@@ -180,7 +204,20 @@ footer .copyright {
 }
 
 
-/* sub01 - Grid System */
 
+@media (max-width: 1200px) { 
+  html {
+    font-size:14px;
+  }
+}
 
-
+@media (max-width: 1000px) { 
+  html {
+    font-size:12px;
+  }
+}
+@media (max-width: 800px) { 
+  html {
+    font-size:10px;
+  }
+}
