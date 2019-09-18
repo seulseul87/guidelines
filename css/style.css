@@ -54,6 +54,7 @@
 body {   
   font-family: "Noto Sans KR", sans-serif !important;
   font-size: 16px;  
+  
 }
 #wrap {
   
@@ -62,8 +63,17 @@ body {
 
 /* header */
 
-header {  
+#header > div {  
   position: fixed;  
+  display:-webkit-box;  
+  display:-ms-flexbox;  
+  display:flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   top: 0;
   left:0;
   width: 100%;
@@ -71,76 +81,80 @@ header {
   background-color:#fff;   
   z-index: 999;
 }
-header .git {
-  position: absolute;
-  top: 20px;
-  right: 20px;  
+#header .gnb {
+  position: relative;
 }
-header .logo {
-  display: block;
-  position: absolute;
+#header .logo {
+  position: absolute;  
   top: 25px;
-  left: 20px;  
+  left: 3%;  
   font-size: 20px;
   font-weight: 600;
-  letter-spacing: -1px;    
+  letter-spacing: -1px;  
+  z-index: 99; 
 }
-header .logo a {
+#header .logo a {
   text-decoration: none;
   color: #000;   
 }
-header .menu {
-  position: absolute;  
-  top: 24px;
-  left: 300px; 
+#header .menu {
+  position: absolute;
+  top: 26px;
 }
-header .menu li { 
+#header .menu li { 
   float: left;
-  margin-right: 70px; 
+  margin: 0 40px;
 }
-header .menu a {
+#header .menu a {
   color: #9ea5aa;
   font-size: 16px;;
   font-weight: 300;
   text-decoration: none;
   outline: none;
 }
-header .menu a:hover {
+#header .menu a:hover {
   color: #000;
 }
+#header .git {  
+  position: absolute;
+  top: 20px;
+  right: 3%;
+}
+
+
 
 
 /* container */
 
 #container {
-  position:relative;
+  position: relative;
   min-height: 100vh;
-  padding: 70px 4% 51px;
-  -webkit-box-sizing:border-box;
-          box-sizing:border-box;
+  padding: 70px 3% 51px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 
 /* contents */
 
 #contents {
-  /* width: 100%; */
+  position: relative;
 }
 #contents > h1 {
   font-size: 1.8rem;
   font-weight: 300;
-  margin-top: 100px;
+  margin-top: 30px;
   margin-bottom: 50px; 
 }
 #contents > h2 {
-  font-size: 1.0rem;
-  font-weight: 500; 
+  font-size: 1.1rem;
+  font-weight: 600; 
   color: #000; 
   margin-top: 50px;
   line-height: 1.8rem;
+  margin-bottom: 20px;
 }
 #contents.main {
-  position: absolute;
   top:0;
   bottom:0;
   left:5%;
@@ -173,10 +187,14 @@ header .menu a:hover {
 
 /* sub01 - Grid System */
 
-
 #contents .layout {
-  line-height: 1.5rem;
-  color: #4d5256;
+
+}
+
+#contents .layout > p {
+  line-height: 2.0rem;
+  color: #9b9b9b;
+  letter-spacing: -0.05rem;
 }
 
 
@@ -185,7 +203,7 @@ header .menu a:hover {
   /* footer */
 
 footer {  
-  position: absolute;
+  position: relative;
   width: 100%; 
   height: 70px;
   background-color:#fff;    
