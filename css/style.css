@@ -99,11 +99,10 @@ body {
 }
 #header .menu {
   position: absolute;
-  top: 26px;
 }
 #header .menu li { 
   float: left;
-  margin: 0 40px;
+  margin: 0 30px;
 }
 #header .menu a {
   color: #9ea5aa;
@@ -135,30 +134,19 @@ body {
 }
 
 
+
+
 /* contents */
 
 #contents {
-  position: relative;
-}
-#contents > h1 {
-  font-size: 1.8rem;
-  font-weight: 300;
-  margin-top: 30px;
-  margin-bottom: 50px; 
-}
-#contents > h2 {
-  font-size: 1.1rem;
-  font-weight: 600; 
-  color: #000; 
-  margin-top: 50px;
-  line-height: 1.8rem;
-  margin-bottom: 20px;
+  position: relative;  
+  width: 80%;
+  margin-left: 10%;
 }
 #contents.main {
   top:0;
   bottom:0;
-  left:5%;
-  right:5%;
+
   height:100%;
   display:-webkit-box;
   display:-ms-flexbox;
@@ -172,9 +160,10 @@ body {
 }
 #contents .section {
   display: block;
+  width: 90%;
   text-align: left;   
   font-weight: 300;
-  line-height: 1.2;     
+  line-height: 1.4;     
   letter-spacing: 0.05rem;
   color: #abd8ed;
   font-size: 3.5rem;  
@@ -185,16 +174,37 @@ body {
 }
 
 
+
+
 /* sub01 - Grid System */
 
-#contents .layout {
-
+#contents > h1 {
+  font-size: 2.0rem;
+  font-weight: 300;
+  margin-top: 20px;
+  color: #000; 
 }
-
-#contents .layout > p {
-  line-height: 2.0rem;
-  color: #9b9b9b;
+#contents > .sub_title {
+  font-size: 0.9rem;
+  font-weight: 300;
+  margin-top: 30px;
+  line-height: 1.4rem;
+  margin-bottom: 50px;
+  color: #000; 
+}
+.layout > .title {
+  margin-top: 100px;
+  margin-bottom: 20px;
+  font-size: 1.1rem;
+  font-weight: 600; 
+  line-height: 1.8rem;
+  color: #000; 
+}
+.layout > .txt {
+  line-height: 1.8rem;
+  font-weight: 300;
   letter-spacing: -0.05rem;
+  color: #000;
 }
 
 
@@ -202,23 +212,19 @@ body {
 
   /* footer */
 
-footer {  
-  position: relative;
+#footer {  
+  position: absolute;
   width: 100%; 
-  height: 70px;
+  height: 49px;  
   background-color:#fff;    
   border-top: #c1c1c1 1px solid;  
   bottom: 0;
-  height: 50px; 
-  color: #333;
-  font-size: 0.8rem;
+  font-size: 12px;
   font-weight: 300;   
 }
-footer .copyright {  
-  position: absolute;  
-  left: 20px;
-  margin-top: 20px;
-  color: #c1c1c1;  
+#footer .copyright {  
+  margin: 20px 3%;
+  color: #c1c1c1;
 }
 
 
